@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Castelul Peles</title>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <link rel="stylesheet" href="homepage.css" />
+    <link rel="stylesheet" href="meniu.css" />
+  </head>
+  <body>
+    <div id="menu-placeholder"></div>
+    <div id="slideShowContainer">
+      <div class="carousel">
+      <div class="carousel_inner">
+
+          <div class="carousel_item carousel_item__active">
+            <img
+              src="./resurse/poze/castelul peles1.jpg"
+              alt=""
+              class="carousel_img"
+            />
+          </div>
+          <div class="carousel_item">
+            <img
+              src="./resurse/poze/pozapeles2.jpg"
+              alt=""
+              class="carousel_img"
+            />
+          </div>
+          <div class="carousel_item">
+            <img
+              src="./resurse/poze/PelesInterior1.jpg"
+              alt=""
+              class="carousel_img"
+            />
+          </div>
+          <div class="carousel_item">
+            <img
+              src="./resurse/poze/biblioteca peles.jpeg"
+              alt=""
+              class="carousel_img"
+            />
+          </div>
+          <div class="carousel_item">
+            <img
+              src="./resurse/poze/castelul peles4.jpeg"
+              alt=""
+              class="carousel_img"
+            />
+          </div>
+          <div class="carousel_item">
+            <img
+              src="./resurse/poze/castelul peles3.webp"
+              alt=""
+              class="carousel_img"
+            />
+          </div>
+
+   </div>
+  </div>
+   <script src="./slidescript.js"></script>    
+
+    <script>
+      $.get("meniu.html", function (data) {
+        $("#menu-placeholder").replaceWith(data);
+      });
+    </script>
+  </body>
+</html>
