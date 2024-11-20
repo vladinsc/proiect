@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <link rel="stylesheet" href="locatie.css" />
+    <link rel="stylesheet" href="meniu.css" />
+  </head>
+  <body>
+    <div id="menu-placeholder"></div>
+    <div class="boxcontainer">
+      <div id="harta"><iframe id="hartaframe"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1401.716837881134!2d25.539653106918998!3d45.36024312738471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b316ecd2e0556d%3A0x9a6e63a594f3d5ad!2sCastelul%20Pele%C8%99!5e0!3m2!1sro!2sro!4v1715710955012!5m2!1sro!2sro" width="600" height="450px" style="border:0; border-color: bisque; border-radius: 10px; position:relative; left:7px; top:10px; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>  
+    </div>
+    <div id="boxcontainer2">
+      <ul>
+        <li id="title"> Indicatii </li>
+        <li> <a class="texta"> Autobuze: T1/T3 <a id="commentariu" href="https://maps.app.goo.gl/fYzdYnGsBBqfNy3y9">(Din Gara Sinaia)</a></a></li>
+        <li> </li>
+        <li> <a class="textalink" href="https://maps.google.com/maps/dir//Castelul+Pele%C8%99+Aleea+Pele%C8%99ului+2+Sinaia+106100/@45.3599816,25.5426423,17z/data=!4m5!4m4!1m0!1m2!1m1!1s0x40b316ecd2e0556d:0x9a6e63a594f3d5ad">Indicatii pe Harta</a> </li>
+        
+      </ul>
+    </div>
+
+    <script>
+      $.get("meniu.html", function (data) {
+        $("#menu-placeholder").replaceWith(data);
+      });
+    </script>
+  </body>
+</html>

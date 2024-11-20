@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <link rel="stylesheet" href="programdevizitare.css" />
+    <link rel="stylesheet" href="meniu.css" />
+  </head>
+  <body>
+    <div id="menu-placeholder"></div>
+    <div class="container">
+      <div class="boxcontainer">
+        <a id="ContactTitle"> Program de Vizitare</a>
+        <ul id="ContactList">
+          <li id="listElement">Miercuri: 10:00 – 17:00</li>
+          <li id="listElement">Joi – Duminică: 9:15 – 17:00</li>
+          <li id="listElement">Luni: închis</li>
+          <li id="listElement">Marți: închis</li>
+        </ul>
+      </div>
+      <div class="boxcontainer">
+        <a id="ContactTitle"> Tarife de Vizitare </a>
+        <ul id="ContactList">
+          <li id="listElement">Adulţi – 50 lei</li>
+          <li id="listElement">Pensionari – 25 lei</li>
+          <li id="listElement">Elevi, studenţi – 12.5 lei</li>
+          <li id="listElement">Card Euro under 26 – 12.5 lei</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="fill"></div>
+
+    <script>
+      $.get("meniu.html", function (data) {
+        $("#menu-placeholder").replaceWith(data);
+      });
+    </script>
+  </body>
+</html>

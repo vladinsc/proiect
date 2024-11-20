@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="meniu.css" />
+  </head>
+  <body>
+    <div id="menu-placeholder"></div>
+    <div class="boxcontainer">
+      <a id="ContactTitle"> Contact </a>
+      <ul id="ContactList">
+        <li id="listElement"> Telefon: + 40 244 314 552 </li>
+        <li id="listElement"> Email: contact@peles.ro </li>
+        <li id="listElement"> Adresa: Aleea Pelesului nr.2, Sinaia </li>
+        <li id="listElement"> Fax: + 40 244 312 416 </li>
+        <li id="listElement"> <a href=" "> Facebook </a> </li>
+      </ul>
+    </div>
+    
+
+    <script>
+      $.get("meniu.html", function (data) {
+        $("#menu-placeholder").replaceWith(data);
+      });
+    </script>
+  </body>
+</html>

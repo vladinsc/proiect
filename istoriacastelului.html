@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <link rel="stylesheet" href="istoriacastelului.css" />
+    <link rel="stylesheet" href="meniu.css" />
+  </head>
+  <header>
+    <div id="menu-placeholder"></div>
+
+  </header>
+  <body>
+    <div class="main">
+      <!-- <div id="historyPanel"></div> -->
+      <div id="dreptunghi1">
+        <div class="text1">
+          <p>
+            Castelul Peleş a fost construit la iniţiativa primului Rege al
+            României, Carol I, în afara perimetrului comunei Podul Neagului,
+            localitate cu o suprafaţă de 24 de km în anul 1874, an în care, din
+            iniţiativa suveranului, comuna primeşte numele de Sinaia.
+          </p>
+          <p>
+            Contextul istoric al edificiului: Castelul Peleş a fost construit la
+            iniţiativa Regelui Carol I, pentru a-i servi drept reşedinţă de
+            vară, investită cu funcţii politice, culturale şi simbolice. După
+            1914, castelul Peleş şi-a exersat în continuare funcţia de
+            reprezentare şi de muzeu, fără a mai fi însă locuit timp de 6 luni pe
+            an, aşa cum obişnuia suveranul fondator. Cel mai important eveniment
+            organizat la Sinaia şi găzduit de castelul Peleş până la abdicarea
+            Regelui Mihai, în decembrie 1947, a fost legat de sărbătorirea
+            semicentenarului castelului în anul 1933 de către Regele Carol al
+            II-lea (1930-1940). În perioada ianuarie – martie 1948, castelul
+            este închis din ordinul autorităţilor comuniste, iar bunurile de
+            patrimoniu sunt inventariate. Cea mai mare parte a colecţiilor de
+            pictură, mobilier, textile, piese de artă decorativă şi cărţi au
+            fost transferate la Muzeul de Artă din capitală.
+          </p>
+          
+        </div>
+      </div>
+      <div id="dreptunghi2">
+        <div class="text1">
+          <p>
+            Furnizori de obiecte de artă: Dintre furnizorii principali, pentru
+            prima etapă de construcţie, amintim casa Heymann din Hamburg şi
+            atelierul condus de August Bembé din Köln-Mainz. Dintre cei care au
+            lucrat constant la decorarea şi furnizarea de piese de artă
+            decorativă pentru castel, din 1883 până în 1914, îi menţionăm pe
+            Joseph Dollitschek, arhitect şi decorator din Viena, Anton
+            Pössenbacher din München, creator de decoraţiuni şi de piese de
+            mobilier şi L. Bernheimer, din acelaşi oraş, furnizor de decoraţiuni
+            interioare, mobilier, covoare orientale, Habie&Polako, din Viena,
+            furnizori de covoare gen Smyrna, atelierele Zettler din München,
+            1882, creatorii de vitralii. Acestea au fost lucrate de patruzeci de
+            artişti şi tehnicieni timp de trei ani.
+          </p>
+          </div>
+          </div>
+
+      
+    </div>
+
+    <!-- <div id="slideShowContainer">
+      <div class="carousel">
+      <div class="carousel_inner">
+         <div class="carousel_item carousel_item__active">
+          <div class="textbox">cccc</div>
+            
+         </div>
+         <div class="carousel_item">
+            <div class="textbox">Castelul Peleş a fost construit la iniţiativa primului Rege al
+              României, Carol I, în afara perimetrului comunei Podul Neagului,
+              localitate cu o suprafaţă de 24 de km în anul 1874, an în care, din
+              iniţiativa suveranului, comuna primeşte numele de Sinaia.</div>
+         </div>
+         <div class="carousel_item">
+          <div class="textbox"> bbbb</div>
+         </div>
+      </div>
+
+      <div class="carousel_indicator">
+         <button class="carousel_dot carousel_dot__active"></button>
+         <button class="carousel_dot"></button>
+         <button class="carousel_dot"></button>
+      </div>
+
+      <div class="carousel_control">
+         <button class="carousel_button carousel_button__prev">
+            <i class="fas fa-chevron-left"><</i>
+         </button>
+         <button class="carousel_button carousel_button__next">
+            <i class="fas fa-chevron-right">></i>
+         </button>
+      </div>
+   </div>
+  </div>
+   <script src="./slidescripttext.js"></script>    -->
+
+    <script>
+        $.get("meniu.html", function (data) {
+          $("#menu-placeholder").replaceWith(data);
+        });
+      </script>
+
+  </body>
+</html>
