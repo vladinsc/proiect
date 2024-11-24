@@ -10,17 +10,21 @@
   </head>
   <body>
     <div id="menu-placeholder"></div>
-    <div class="boxcontainer">
-      <a id="ContactTitle"> Contact </a>
-      <ul id="ContactList">
-        <li id="listElement"> Telefon: + 40 244 314 552 </li>
-        <li id="listElement"> Email: contact@peles.ro </li>
-        <li id="listElement"> Adresa: Aleea Pelesului nr.2, Sinaia </li>
-        <li id="listElement"> Fax: + 40 244 312 416 </li>
-        <li id="listElement"> <a href=" "> Facebook </a> </li>
-      </ul>
+    <div class="container">
+      <div class="boxcontainer">
+        <a id="ContactTitle"> Contact </a>
+        <div id="listacont">
+          <a id="enr">Telefon: + 40 244 314 552</a>
+          <a id="enr">Email: contact@peles.ro</a>
+          <a id="enr">Adresa: Aleea Pelesului nr.2, Sinaia</a>
+          <a id="enr">Fax: + 40 244 312 416</a>
+          <a id="enr" href="https://www.facebook.com/muzeulnationalpeles/">Facebook</a>
+        </div>
+      </div>
+      
     </div>
-    
+
+ 
 
     <script>
       $.get("meniu.html", function (data) {
@@ -29,3 +33,4 @@
     </script>
   </body>
 </html>
+
