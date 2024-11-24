@@ -7,8 +7,20 @@
 * {
    margin: 0;
    box-sizing: border-box;
+   list-style: none;
 }
 @media only screen and (min-width: 992px){
+   :root {
+      font-family: "Raleway", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+   }
+   
+   * {
+      margin: 0;
+      box-sizing: border-box;
+      list-style: none;
+   }
 #slideShowContainer {
    position: absolute;
    top: 30vh;
@@ -17,5 +29,56 @@
    height: 60vh;
    border-radius: 10px;
    background-color: darkslategray;
+   display: flex;
+   overflow: hidden;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   
 }
+
+#pic2{
+   position:relative;
+   width: 50vw;
+   height: 50vh;
+   object-fit: cover;
+}
+
+}
+
+@media only screen and (min-width: 300px) and (max-width: 992px){
+   :root {
+      font-family: "Raleway", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+   }
+   
+   * {
+      margin: 0;
+      box-sizing: border-box;
+      list-style: none;
+   }
+#slideShowContainer {
+   position: absolute;
+   top: 20vh;
+   left: 10vw;
+   width: 80vw;
+   height: 60vh;
+   border-radius: 10px;
+   background-color: darkslategray;
+   display: flex;
+   overflow: hidden;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   
+}
+
+#pic2{
+   position:relative;
+   width: 50vw;
+   height: 50vh;
+   object-fit: cover;
+}
+
 }
