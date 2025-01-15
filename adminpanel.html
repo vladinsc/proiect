@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Castelul Peles</title>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <link rel="stylesheet" href="homepage.css" />
+    <link rel="stylesheet" href="meniu.css" />
+    <style>
+        a{
+            color: red;
+            font-size: 50px;
+            position:absolute;
+            left: 500px;
+            top: 250px;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="menu-placeholder"></div>
+    
+        <a style.color href="index.html">Easter EGG admin</a>
+        
+        
+        
+  </div>  
+
+    <script>
+      $.get("meniu.html", function (data) {
+        $("#menu-placeholder").replaceWith(data);
+      });
+    </script>
+  </body>
+</html>

@@ -29,3 +29,14 @@ a{
     left: 10px;
 
 }
+#logout-button{
+    display: none;
+}
+#welcome{
+    display: none;
+}
+#login-message{
+    position: relative;
+    top: 50px;
+    color: red;
+}

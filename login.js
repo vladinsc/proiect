@@ -27,10 +27,17 @@ document.addEventListener("DOMContentLoaded", () => {
         if (user) {
             loginSection.style.display = "none";
             logoutSection.style.display = "block";
+            document.getElementById('welcome').style.display = "block";
+            document.getElementById('logout-button').style.display = "block";
+            document.getElementById('login-message').style.display = "none";
             userDisplay.textContent = username;
             document.getElementById('nocont').style.display = "none";
+            if(user.username === "admin"){
+                window.location.href = "adminpanel.html";
+            }
         } else {
             loginMessage.textContent = "Ai gresit usernmae-ul sau parola!!! :(";
+            document.getElementById('login-message').style.display = "block";
         }
     });
     logoutButton.addEventListener("click", () => {
