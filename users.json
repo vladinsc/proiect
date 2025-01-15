@@ -4,6 +4,10 @@
         "password": "password123"
     },
     {
+        "username": "vlad",
+        "password": "vlad"
+    },
+    {
         "username": "admin",
         "password": "adminpass"
     }

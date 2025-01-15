@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
             loginSection.style.display = "none";
             logoutSection.style.display = "block";
             userDisplay.textContent = username;
+            document.getElementById('nocont').style.display = "none";
         } else {
             loginMessage.textContent = "Ai gresit usernmae-ul sau parola!!! :(";
         }
@@ -35,6 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
     logoutButton.addEventListener("click", () => {
         loginSection.style.display = "block";
         logoutSection.style.display = "none";
+        document.getElementById('nocont').style.display = "block";
         loginMessage.textContent = "";
         loginForm.reset();
     });

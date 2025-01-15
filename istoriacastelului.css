@@ -1,5 +1,5 @@
 @media only  screen and (min-width: 992px){
-   .boxcontainer{
+   #boxcontainer{
        
        top: 300px;
        left:60%;
@@ -65,7 +65,7 @@
 
    }
    @media only  screen and (min-width: 300px) and (max-width: 992px){
-       .boxcontainer{
+       #boxcontainer{
        width: 80vw;
        height: 30vh;
        background-color:  darkslategray;
@@ -121,6 +121,14 @@
            flex-direction: column-reverse;
            justify-content: space-evenly;
            align-items: center;
+          }
+          #patratMare{
+            position: absolute;
+            bottom: 0;
+            left: 25px;
+            width: 100px;
+            height:100px;
+            background-color: black;
           }
           
        }

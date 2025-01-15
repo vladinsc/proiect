@@ -15,40 +15,33 @@
   <body>
     <div id="menu-placeholder"></div>
     <div id="invisible-container">
-    <div class="boxcontainer">
+    <div id="boxcontainer">
        <ul>
         <li id="title">Camere Vizitate</li>
-        
+        <li class="camere"> Am vazut Camera 1 de: <div id="camera1Cnt"></div> </li>
+        <li class="camere"> Am vazut Camera 2 de: <div id="camera2Cnt"></div> </li>
+        <li class="camere"> Am vazut Camera 3 de: <div id="camera3Cnt"></div> </li>
+        <li class="camere"> Am vazut Camera 4 de: <div id="camera4Cnt"></div> </li>
        </ul>
     </div>
     <div id="boxcontainer2">
       <ul>
         <li id="title"> Camere de vizitat </li>
-        <li class="camere"> camera 1 </li>
-        <li class="camere"> camera 2 </li>
-        <li class="camere"> camera 3 </li>
-        <li class="camere"> camera 4 </li>
+        <li class="camere"> camera 1 <button id="camera1">Am vazut</button></li>
+        <li class="camere"> camera 2 <button id="camera2">Am vazut</button></li>
+        <li class="camere"> camera 3 <button id="camera3">Am vazut</button> </li>
+        <li class="camere"> camera 4  <button id="camera4">Am vazut</button> </li>
       </ul>
     </div>
+    
   </div>
+  <div id="patratMare"></div>
 
     <script>
       $.get("meniu.html", function (data) {
         $("#menu-placeholder").replaceWith(data);
       });
     </script>
-    <script>
-      const devzt = document.querySelectorAll('.camere');
-      const vazute = document.querySelector('.vazute');
-      const vazuteWrapper = document.querySelector('.vazuteWrapper');
-      
-      devzt.forEach(cameraDeVzt => cameraDeVzt.addEventListener('click', (event) => {
-        let cameraVazuta = document.createElement('li');
-        cameraDeVazutContent = document.createTextNode(cameraDeVzt.textContent);
-        vazute.appendChild(cameraDeVazutContent);
-        vazuteWrapper.insertBefore(vazute, boxcontainer)
-        devzt.remove();
-      })) 
-      </script>
+    <script src="istoriacastelului.js"></script> 
     </body>
     </html>
