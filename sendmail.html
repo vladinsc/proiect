@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="sendmail.css" />
+    <link rel="stylesheet" href="meniu.css" />
+  </head>
+  <body>
+    <div id="menu-placeholder"></div>
+    <div class="container">
+      <div class="boxcontainer">
+        <form id="sendmail-form"> 
+          <label>TO: contact@peles.ro</label><br>
+          <label for="useremail">Your Email:</label>
+          <input type="text" id="useremail" placeholder="youremail@example.com" required><br>
+          <label for="message">Your Message:</label>
+          <input type="text" id="message" required><br>
+          <label for="anonim">Hide your email?</label>
+          <input  type="checkbox" id="anonim"><br>
+          <button type="submit">SEND</button>
+          
+        </form>
+        <div id="eroare"> </div>
+        <a>Data de astazi este: </a><div id="todayDate"></div> 
+        </div>
+      </div>
+     
+    </div>
+
+    
+
+    <script>
+      $.get("meniu.html", function (data) {
+        $("#menu-placeholder").replaceWith(data);
+      });
+    </script>
+    <script src="sendmail.js"></script>
+  </body>
+</html>
+

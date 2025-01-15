@@ -118,6 +118,11 @@ a {
     text-transform: uppercase;
     color: white;
 }
+#log{
+  position: absolute;
+  right: 50px;
+  top: 30px;
+}
 
 }
 

@@ -1,0 +1,31 @@
+#container{
+    width: 20vw;
+    background-color:  darkslategray;
+    height: 50vh;
+    position:relative;
+    left: 40%;
+    top: 200px;
+    border-radius: 5%;
+    color: white;
+}
+h2{
+    position: relative;
+    left: 0%;
+    top: 2%;
+}
+#login-section{
+position: relative;
+top: 10%;
+left:20%;
+}
+#logout-section{
+    position: relative;
+top: 20%;
+left:0%;
+}
+a{
+    position: relative;
+    bottom: 0;
+    left: 10px;
+
+}

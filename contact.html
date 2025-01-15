@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://code.jquery.com/jquery.min.js"></script>
+    
     <link rel="stylesheet" href="contact.css" />
     <link rel="stylesheet" href="meniu.css" />
   </head>
@@ -14,23 +15,25 @@
       <div class="boxcontainer">
         <a id="ContactTitle"> Contact </a>
         <div id="listacont">
-          <a id="enr">Telefon: + 40 244 314 552</a>
-          <a id="enr">Email: contact@peles.ro</a>
-          <a id="enr">Adresa: Aleea Pelesului nr.2, Sinaia</a>
-          <a id="enr">Fax: + 40 244 312 416</a>
-          <a id="enr" href="https://www.facebook.com/muzeulnationalpeles/">Facebook</a>
+          <a id="enr1">Telefon: + 40 244 314 552</a>
+          <a id="enr2" href="sendmail.html">Email: contact@peles.ro </a>
+          <a id="enr3">Adresa: Aleea Pelesului nr.2, Sinaia</a>
+          <a id="enr4">Fax: + 40 244 312 416</a>
+          <a id="enr5" href="https://www.facebook.com/muzeulnationalpeles/">Facebook</a>
         </div>
       </div>
-      
+      <button id="imprd"> Improve readability
+      </button>
     </div>
 
- 
+   
 
     <script>
       $.get("meniu.html", function (data) {
         $("#menu-placeholder").replaceWith(data);
       });
     </script>
+    <script src="contact.js"></script>
   </body>
 </html>
 
