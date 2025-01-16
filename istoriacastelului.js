@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let count2 = 0;
     let count3 = 0;
     let count4 = 0;
+    setTimeout(alb, 10000);
     function culoareRandom(){
         return Math.floor(Math.random() * 255);
     }
@@ -35,7 +36,9 @@ count4++;
 camera4Display.textContent = count4;
 x.style.backgroundColor = 'rgba('+ culoareRandom() + ',' + culoareRandom() + ',' + culoareRandom() + '\)'
 });
-
+function alb(){
+    x.style.backgroundColor = "white";
+}
 
 
 })
